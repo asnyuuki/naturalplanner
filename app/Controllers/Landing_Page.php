@@ -2,15 +2,12 @@
 
 namespace App\Controllers;
 
-class Home extends BaseController
+class Landing_Page extends BaseController
 {
     public function index()
     {
         return view('welcome_message');
+        
+        // echo "nama saya Abimanyu";
     }
-
-    // public function coba()
-    // {
-    //     echo "Hello World";
-    // }
 }
