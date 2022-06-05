@@ -9,7 +9,8 @@ class Users extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'My Profile | Natural Planner'
+            'title' => 'My Profile | Natural Planner',
+            'copyright' => 'Copyright &copy; Nature Venue Wedding Inc.'
         ];
         echo view('/user/index', $data);
     }
