@@ -8,7 +8,7 @@
     <title><?= $title; ?></title>
 
     <!-- Favicon Here -->
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <!-- Font Awesome Script -->
     <script src="https://kit.fontawesome.com/f7402773f7.js" crossorigin="anonymous"></script>
