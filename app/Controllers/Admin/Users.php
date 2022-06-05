@@ -8,8 +8,9 @@ class Users extends BaseController
 {
     public function index()
     {
-        // return view('welcome_message');
-        
-        echo "Ini Controller Users";
+        $data = [
+            'title' => 'My Profile | Natural Planner'
+        ];
+        echo view('/user/index', $data);
     }
 }
