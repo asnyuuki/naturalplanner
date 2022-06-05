@@ -2692,15 +2692,15 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-    color: #fff;
-    background-color: #4e73df;
-    border-color: #4e73df
+    color: rgb(0, 0, 0);
+    background-color: rgb(241, 216, 178);
+    border-color: rgb(242, 216, 175)
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #2e59d9;
-    border-color: #2653d4
+    background-color: #736357;
+    border-color: #7d6f65
 }
 
 .btn-primary.focus,
@@ -11394,7 +11394,7 @@ a:focus {
 
 .topbar .topbar-divider {
     width: 0;
-    border-right: 1px solid #e3e6f0;
+    border-right: 1px solid #736357;
     height: calc(4.375rem - 2rem);
     margin: auto 1rem
 }
@@ -11913,7 +11913,7 @@ a:focus {
 }
 
 .sidebar-dark hr.sidebar-divider {
-    border-top: 1px solid rgba(255, 255, 255, .15)
+    border-top: 1px solid rgba(0, 0, 0, .085)
 }
 
 .sidebar-dark .sidebar-heading {
@@ -11931,13 +11931,13 @@ a:focus {
 .sidebar-dark .nav-item .nav-link:active,
 .sidebar-dark .nav-item .nav-link:focus,
 .sidebar-dark .nav-item .nav-link:hover {
-    color: #fff
+    color: rgba(115, 116, 128, .6)
 }
 
 .sidebar-dark .nav-item .nav-link:active i,
 .sidebar-dark .nav-item .nav-link:focus i,
 .sidebar-dark .nav-item .nav-link:hover i {
-    color: #fff
+    color: rgba(115, 116, 128, .6)
 }
 
 .sidebar-dark .nav-item .nav-link[data-toggle=collapse]::after {
