@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+
     <title> <?= $title; ?> </title>
 
     <!-- Favicon Here -->
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 
-    <!-- Font Awesome Script -->
+    <!-- Fontawesome Script -->
     <script src="https://kit.fontawesome.com/f7402773f7.js" crossorigin="anonymous"></script>
 
     <!-- Google Fonts -->
@@ -20,16 +22,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Style CSS -->
-    <link rel="stylesheet" href="/assets/css/template.css">
+    <link rel="stylesheet" href="/css/template.css">
 </head>
 
-<body>
+<body id="page-top">
     <?= $this->include('layout/navbar'); ?>
 
     <?= $this->renderSection('content'); ?>
 
     <!-- JS Tilt Glare -->
-    <script src="/assets/js/vanilla-tilt.min.js"></script>
+    <script src="/js/vanilla-tilt.min.js"></script>
     <script>
         VanillaTilt.init(document.querySelectorAll(".icon li a"), {
             max: 30,

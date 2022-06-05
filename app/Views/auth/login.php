@@ -17,12 +17,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Style CSS -->
-    <link rel="stylesheet" href="/assets/css/login.css">
+    <link rel="stylesheet" href="/css/login.css">
 </head>
 
 <body>
     <section class="forms-section">
-        <img src="/assets/img/logo/logo-weddorg.svg" class="mt-4" style="height:90px;">
+        <img src="/img/logo/logo-weddorg.svg" class="mt-4" style="height:90px;">
         <div class="forms mt-5">
             <a class="btn btn-danger" data-bs-toggle="collapse" href="/pages/landingPage" role="button" aria-expanded="false" aria-controls="collapseList" style="font-size: 12px; border-radius: 19px;"><i class="fa-solid fa-angle-left">
                     back

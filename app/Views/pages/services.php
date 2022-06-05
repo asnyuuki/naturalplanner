@@ -29,7 +29,7 @@
                     </div>
                 </div>
             </div>
-            <img src="/assets/img/foto/foto-pengantin.jpg" alt="foto-pengantin">
+            <img src="/img/foto/foto-pengantin.jpg" alt="foto-pengantin">
             <div class="row">
                 <div class="card-title text-center mt-4">
                     <hr>
@@ -41,7 +41,7 @@
                 <div class="col-4 p-3">
                     <div class="card p-1 shadow" style="border-radius: 30px 30px 0 0; border:0px;">
                         <div class="card-title mt-3 text-center">
-                            <img src="/assets/img/icons/star.png">
+                            <img src="/img/icons/star.png">
                             <h4 class="pt-4">Little Plan</h4>
                         </div>
                         <div class="card-body" style="border-top: 5px dashed blanchedalmond;">
@@ -76,7 +76,7 @@
                 <div class="col-4 p-3">
                     <div class="card p-1 shadow" style="border-radius: 30px 30px 0 0; border:0px;">
                         <div class="card-title mt-3 text-center">
-                            <img src="/assets/img/icons/love.png">
+                            <img src="/img/icons/love.png">
                             <h4 class="pt-4">Medium Plan</h4>
                         </div>
                         <div class="card-body" style="border-top: 5px dashed blanchedalmond;">
@@ -104,7 +104,7 @@
                                 Price: $250
                             </div>
                             <div class="row justify-content-center mt-4 ms-5 me-5">
-                                <a href="checkout.html" type="button" class="btn btn-outline-warning rounded-pill fw-bold">Purchase Item</a>
+                                <a href="checkout.html" type="button" class="btn btn-outline-warning rounded-pill fw-bold" style="font-size: 16px;">Purchase Item</a>
                             </div>
                         </div>
                     </div>
@@ -113,7 +113,7 @@
                 <div class="col-4 p-3">
                     <div class="card p-1 shadow" style="border-radius: 30px 30px 0 0; border:0px;">
                         <div class="card-title mt-3 text-center">
-                            <img src="/assets/img/icons/diamond.png">
+                            <img src="/img/icons/diamond.png">
                             <h4 class="pt-4">Big Plan</h4>
                         </div>
                         <div class="card-body" style="border-top: 5px dashed blanchedalmond;">

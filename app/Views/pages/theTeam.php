@@ -9,7 +9,7 @@
                 <p class="mb-5">BECAUSE WE ARE BORN TO MAKE THIS DAY YOUR BEAUTIFUL MEMORIES</p>
                 <div class="row mb-5 d-flex justify-content-start">
                     <div class="card p-3 ms-2 col-4 bg-transparent border-0" style="width: 18em; align-items: center;">
-                        <img src="/assets/img/foto/foto-abimanyu.png" style="width: 70%;">
+                        <img src="/img/foto/foto-abimanyu.png" style="width: 70%;">
                     </div>
                     <div class="card p-3 ms-2 shadow col bg-transparent border-0" style="width: 18em;">
                         <div class="card-title" style="font-weight: 600;">
@@ -40,12 +40,12 @@
                         </div>
                     </div>
                     <div class="card p-3 ms-2 col-4 bg-transparent border-0" style="width: 18em; align-items: center;">
-                        <img src="/assets/img/foto/foto-andre.png" style="width: 70%;">
+                        <img src="/img/foto/foto-andre.png" style="width: 70%;">
                     </div>
                 </div>
                 <div class="row mb-5 d-flex justify-content-start">
                     <div class="card p-3 ms-2 col-4 bg-transparent border-0" style="width: 18em; align-items: center;">
-                        <img src="/assets/img/foto/foto-maudillah.png" style="width: 70%;">
+                        <img src="/img/foto/foto-maudillah.png" style="width: 70%;">
                     </div>
                     <div class="card p-3 ms-2 shadow col bg-transparent border-0" style="width: 18em;">
                         <div class="card-title" style="font-weight: 600;">
@@ -76,12 +76,12 @@
                         </div>
                     </div>
                     <div class="card p-3 ms-2 col-4 bg-transparent border-0" style="width: 18em; align-items: center;">
-                        <img src="/assets/img/foto/foto-dimas.png" style="width: 70%;">
+                        <img src="/img/foto/foto-dimas.png" style="width: 70%;">
                     </div>
                 </div>
                 <div class="row mb-5 d-flex justify-content-start">
                     <div class="card p-3 ms-2 col-4 bg-transparent border-0" style="width: 18em; align-items: center;">
-                        <img src="/assets/img/foto/foto-elvanhaz.png" style="width: 70%;">
+                        <img src="/img/foto/foto-elvanhaz.png" style="width: 70%;">
                     </div>
                     <div class="card p-3 ms-2 shadow col bg-transparent border-0" style="width: 18em;">
                         <div class="card-title" style="font-weight: 600;">

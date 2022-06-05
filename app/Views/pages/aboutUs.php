@@ -24,7 +24,7 @@
         <hr>
         <div class="row">
             <div class="col mt-2 mb-2" style="text-align: center;">
-                <img src="/assets/img/logo/logo-weddorg.png" width="150">
+                <img src="/img/logo/logo-weddorg.png" width="150">
             </div>
         </div>
     </div>

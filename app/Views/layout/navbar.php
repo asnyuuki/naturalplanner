@@ -1,8 +1,8 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background: linear-gradient( 109.5deg,  rgba(229,233,177,1) 11.2%, rgba(223,205,187,1) 100.2% );">
     <div class="container-fluid col-md-8">
-        <a class="navbar-brand" href="landingPage.html">
-            <img src="/assets/img/logo/logo-weddorg.svg" width="90" height="44">
+        <a class="navbar-brand" href="/pages/landingPage">
+            <img src="/img/logo/logo-weddorg.svg" width="90" height="44">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
