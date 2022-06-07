@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 class Pages extends BaseController
 {
-    public function landingPage()
+    public function index()
     {
         $data = [
             'title' => 'Home | Natural Planner'
@@ -47,9 +47,11 @@ class Pages extends BaseController
 
     public function login()
     {
-        $data = [
-            'title' => 'Login-SignUp | Natural Planner'
-        ];
-        echo view('auth/login', $data);
+        echo view('auth/login');
+    }
+
+    public function register()
+    {
+        echo view('auth/register');
     }
 }

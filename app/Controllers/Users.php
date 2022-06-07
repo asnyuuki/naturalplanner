@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers\Admin;
+namespace App\Controllers;
 
 use App\Controllers\BaseController;
 
@@ -12,6 +12,6 @@ class Users extends BaseController
             'title' => 'My Profile | Natural Planner',
             'copyright' => 'Copyright &copy; Nature Venue Wedding Inc.'
         ];
-        echo view('/user/index', $data);
+        echo view('user/index', $data);
     }
 }
