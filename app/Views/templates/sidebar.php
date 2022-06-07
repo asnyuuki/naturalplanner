@@ -17,6 +17,23 @@
             <span>Dashboard</span></a>
     </li>
 
+    <?php if (in_groups('admin')) : ?>
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+
+        <!-- Heading -->
+        <div class="sidebar-heading">
+            User Management
+        </div>
+
+        <!-- Nav Item - User List -->
+        <li class="nav-item">
+            <a class="nav-link" href="<?= base_url('admin'); ?>">
+                <i class="fas fa-users"></i>
+                <span>User List</span></a>
+        </li>
+
+    <?php endif; ?>
     <!-- Divider -->
     <hr class="sidebar-divider">
 
@@ -27,8 +44,8 @@
 
     <!-- Nav Item - My Profile -->
     <li class="nav-item">
-        <a class="nav-link" href="charts.html">
-            <i class="fas fa-user"></i>
+        <a class="nav-link" href="<?= base_url('users'); ?>"">
+            <i class=" fas fa-user"></i>
             <span>My Profile</span></a>
     </li>
 
@@ -44,7 +61,7 @@
 
     <!-- Nav Item - Logout -->
     <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="<?= base_url('logout'); ?>">
             <i class="fas fa-sign-out-alt"></i>
             <span>Logout</span></a>
     </li>

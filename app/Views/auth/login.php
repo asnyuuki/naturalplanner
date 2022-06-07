@@ -1,91 +1,88 @@
-<!DOCTYPE html>
-<html lang="en">
+<?= $this->extend('auth/templates/index'); ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $title; ?></title>
+<?= $this->section('content'); ?>
+<div class="container">
 
-    <!-- Favicon Here -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <!-- Outer Row -->
+    <div class="row justify-content-center">
 
-    <!-- Font Awesome Script -->
-    <script src="https://kit.fontawesome.com/f7402773f7.js" crossorigin="anonymous"></script>
+        <div class="col-md-6">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+            <div class="card o-hidden border-0 shadow-lg my-5">
+                <div class="card-body p-0">
+                    <!-- Nested Row within Card Body -->
+                    <div class="row">
+                        <div class="col-lg">
+                            <div class="p-5">
+                                <div class="text-center">
+                                    <h1><img src="/img/logo/logo-weddorg.svg" class="mb-4" style="height: 80px;"></h1>
+                                    <h1 class="h4 text-gray-900 mb-4"><?= lang('Auth.loginTitle') ?></h1>
+                                </div>
 
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="/css/login.css">
-</head>
+                                <?= view('Myth\Auth\Views\_message_block') ?>
 
-<body>
-    <section class="forms-section">
-        <img src="/img/logo/logo-weddorg.svg" class="mt-4" style="height:90px;">
-        <div class="forms mt-5">
-            <a class="btn btn-danger" data-bs-toggle="collapse" href="/pages/landingPage" role="button" aria-expanded="false" aria-controls="collapseList" style="font-size: 12px; border-radius: 19px;"><i class="fa-solid fa-angle-left">
-                    back
-                </i>
-            </a>
-            <div class="form-wrapper is-active">
-                <button type="button" class="switcher switcher-login">
-                    Login
-                    <span class="underline"></span>
-                </button>
-                <form class="form form-login">
-                    <fieldset>
-                        <legend>Please, enter your email and password for login.</legend>
-                        <div class="input-block">
-                            <label for="login-email">E-mail</label>
-                            <input id="login-email" type="email" required>
+                                <form class="user" action="<?= route_to('login') ?>" method="post">
+                                    <?= csrf_field() ?>
+
+                                    <?php if ($config->validFields === ['email']) : ?>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control form-control-user <?php if (session('errors.login')) : ?>is-invalid<?php endif ?>" name="login" placeholder="<?= lang('Auth.email') ?>">
+                                            <div class="invalid-feedback">
+                                                <?= session('errors.login') ?>
+                                            </div>
+                                        </div>
+                                    <?php else : ?>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-control-user <?php if (session('errors.login')) : ?>is-invalid<?php endif ?>" name="login" placeholder="<?= lang('Auth.emailOrUsername') ?>">
+                                            <div class="invalid-feedback">
+                                                <?= session('errors.login') ?>
+                                            </div>
+                                        </div>
+                                    <?php endif; ?>
+
+
+                                    <div class="form-group">
+                                        <input type="password" name="password" class="form-control form-control-user <?php if (session('errors.password')) : ?>is-invalid<?php endif ?>" placeholder="<?= lang('Auth.password') ?>">
+                                        <div class="invalid-feedback">
+                                            <?= session('errors.password') ?>
+                                        </div>
+                                    </div>
+
+                                    <?php if ($config->allowRemembering) : ?>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <label class="small form-check-label">
+                                                    <input type="checkbox" name="remember" class="form-check-input" <?php if (old('remember')) : ?> checked <?php endif ?>>
+                                                    <?= lang('Auth.rememberMe') ?>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    <?php endif; ?>
+
+                                    <button class="btn btn-primary btn-user btn-block">
+                                        <?= lang('Auth.loginAction') ?>
+                                    </button>
+                                </form>
+                                <hr>
+                                <?php if ($config->activeResetter) : ?>
+                                    <div class="text-center">
+                                        <p><a class="small" href="<?= route_to('forgot') ?>" style="text-decoration: none; color: orange" onmouseover="this.style.color='grey'" onmouseout="this.style.color='orange'"><?= lang('Auth.forgotYourPassword') ?></a></p>
+                                    </div>
+                                <?php endif; ?>
+                                <?php if ($config->allowRegistration) : ?>
+                                    <div class="text-center">
+                                        <p><a class="small" href="<?= route_to('register') ?>" style="text-decoration: none; color: orange" onmouseover="this.style.color='grey'" onmouseout="this.style.color='orange'"><?= lang('Auth.needAnAccount') ?> Register Now!</a></p>
+                                    </div>
+                                <?php endif; ?>
+                            </div>
                         </div>
-                        <div class="input-block">
-                            <label for="login-password">Password</label>
-                            <input id="login-password" type="password" required>
-                        </div>
-                    </fieldset>
-                    <button type="submit" class="btn-login">Login</button>
-                </form>
+                    </div>
+                </div>
             </div>
-            <div class="form-wrapper">
-                <button type="button" class="switcher switcher-signup">
-                    Sign Up
-                    <span class="underline"></span>
-                </button>
-                <form class="form form-signup">
-                    <fieldset>
-                        <legend>Please, enter your email, password and password confirmation for sign up.</legend>
-                        <div class="input-block">
-                            <label for="signup-email">E-mail</label>
-                            <input id="signup-email" type="email" required>
-                        </div>
-                        <div class="input-block">
-                            <label for="signup-password">Password</label>
-                            <input id="signup-password" type="password" required>
-                        </div>
-                        <div class="input-block">
-                            <label for="signup-password-confirm">Confirm password</label>
-                            <input id="signup-password-confirm" type="password" required>
-                        </div>
-                    </fieldset>
-                    <button type="submit" class="btn-signup">Continue</button>
-                </form>
-            </div>
+
         </div>
-    </section>
-    </section>
-    <!-- Javascript -->
-    <script>
-        const switchers = [...document.querySelectorAll('.switcher')]
 
-        switchers.forEach(item => {
-            item.addEventListener('click', function() {
-                switchers.forEach(item => item.parentElement.classList.remove('is-active'))
-                this.parentElement.classList.add('is-active')
-            })
-        })
-    </script>
-</body>
+    </div>
 
-</html>
+</div>
+<?= $this->endSection(); ?>

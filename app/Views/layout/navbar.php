@@ -10,7 +10,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item rounded-pill">
-                    <a class="nav-link" aria-current="page" href="/pages/landingPage">Home</a>
+                    <a class="nav-link" aria-current="page" href="/pages">Home</a>
                 </li>
                 <li class="nav-item dropdown rounded-pill">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -27,7 +27,7 @@
                 <li class="nav-item rounded-pill">
                     <a class="nav-link" href="/pages/getintouch">Get in Touch</a>
                 </li>
-                <a type="button" class="btn rounded-pill" id="btn-login" style="font-weight: 600; font-size: 15px; margin-left: 3em" href="/pages/login">
+                <a type="button" class="btn rounded-pill" id="btn-login" style="font-weight: 600; font-size: 15px; margin-left: 3em" href="/users/index">
                     Login / Signup
                 </a>
             </ul>
