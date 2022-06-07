@@ -56,6 +56,12 @@
             <span>Edit Profile</span></a>
     </li>
 
+    <li class="nav-item">
+        <a class="nav-link" href="tables.html">
+            <i class="fas fa-lock"></i>
+            <span>Ganti Password</span></a>
+    </li>
+
     <!-- Divider -->
     <hr class="sidebar-divider">
 
