@@ -11,7 +11,7 @@
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row d-flex no-gutters">
                     <div class="col-md-4 align-self-center">
-                        <img src="<?= base_url('/img/' . user()->user_image); ?>" class="card-img" style="margin-left: 10px;" alt="<?= user()->username; ?>">
+                        <img src="<?= base_url('/public/img/' . user()->user_image); ?>" class="card-img" style="margin-left: 10px;" alt="<?= user()->username; ?>">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
