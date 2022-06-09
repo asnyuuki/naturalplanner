@@ -53,4 +53,19 @@ class Admin extends BaseController
 
         echo view('admin/detail', $data);
     }
+
+    public function create()
+    {
+        $data = [
+            'title' => 'Add New User | Natural Planner',
+            'copyright' => 'Copyright &copy; Nature Venue Wedding Inc.'
+        ];
+
+        echo view('admin/create', $data);
+    }
+
+    public function save()
+    {
+        $this->request->getVar();
+    }
 }

@@ -8,6 +8,10 @@
     <h1 class="h3 mb-4 text-gray-800">User List</h1>
     <div class="row">
         <div class="col-lg-8">
+            <a href="/admin/create" class="btn btn-primary mb-3">
+                <i class="fa-solid fa-user-plus"></i>
+                user
+            </a>
             <table class="table">
                 <thead>
                     <tr>
@@ -40,7 +44,6 @@
     </div>
 
 </div>
-<!-- /.container-fluid -->
 <!-- End of Main Content -->
 
 <!-- Footer -->

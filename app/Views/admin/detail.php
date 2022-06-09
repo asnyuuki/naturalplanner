@@ -17,16 +17,24 @@
                         <div class="card-body">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
+                                    <small style="color: orange;">Username</small> <br>
                                     <h4>
                                         <?= $user->username; ?>
                                     </h4>
                                 </li>
                                 <?php if ($user->fullname) : ?>
-                                    <li class="list-group-item"><?= $user->fullname; ?></li>
+                                    <li class="list-group-item">
+                                        <small style="color: orange;">Fullname</small> <br>
+                                        <?= $user->fullname; ?>
+                                    </li>
                                 <?php endif; ?>
 
-                                <li class="list-group-item"><?= $user->email; ?></li>
                                 <li class="list-group-item">
+                                    <small style="color: orange;">Email</small> <br>
+                                    <?= $user->email; ?>
+                                </li>
+                                <li class="list-group-item">
+                                    <small style="color: orange;">Role</small> <br>
                                     <span class="badge badge-<?= ($user->name == 'admin') ? 'success' : 'warning'; ?>"><?= $user->name; ?></span>
                                 </li>
                                 <li class="list-group-item">
