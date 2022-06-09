@@ -16,7 +16,7 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php')) {
  * Router Setup
  * --------------------------------------------------------------------
  */
-// $route['default_controller'] = 'Pegawai';
+
 $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('home');
 $routes->setDefaultMethod('index');
