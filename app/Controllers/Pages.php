@@ -7,10 +7,9 @@ class Pages extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Home | Natural Planner'
+            'title' => 'Home | Natural Planner',
         ];
         echo view('pages/landingPage', $data);
-        // echo "nama saya Abimanyu";
     }
 
     public function aboutUs()
@@ -50,6 +49,7 @@ class Pages extends BaseController
         echo view('auth/login');
     }
 
+    // Create (BDL) - Buat Akun
     public function register()
     {
         echo view('auth/register');

@@ -12,7 +12,7 @@
     <?php if (in_groups('admin')) : ?>
         <!-- Nav Item - Dashboard -->
         <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href=" <?= base_url('users'); ?>">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Dashboard</span></a>
         </li>
@@ -43,14 +43,14 @@
 
     <!-- Nav Item - My Profile -->
     <li class="nav-item">
-        <a class="nav-link" href="<?= base_url('users'); ?>"">
+        <a class="nav-link" href="<?= base_url('users'); ?>">
             <i class=" fas fa-user"></i>
             <span>My Profile</span></a>
     </li>
 
     <!-- Nav Item - Edit Profile -->
     <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="http://localhost:8080/users/coba">
             <i class="fas fa-user-edit"></i>
             <span>Edit Profile</span></a>
     </li>

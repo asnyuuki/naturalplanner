@@ -16,6 +16,7 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php')) {
  * Router Setup
  * --------------------------------------------------------------------
  */
+// $route['default_controller'] = 'Pegawai';
 $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('home');
 $routes->setDefaultMethod('index');
@@ -34,10 +35,13 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Pages::index');
 
 $routes->get('/', 'Users::index');
+$routes->get('/', 'Users::coba');
 
 $routes->get('/admin', 'Admin::index', ['filter' => 'role:admin']);
 $routes->get('/admin/index', 'Admin::index', ['filter' => 'role:admin']);
 $routes->get('/admin/(:num)', 'Admin::detail/$1', ['filter' => 'role:admin']);
+
+$routes->post('pengguna/update/(:num)', 'Pengguna::update/$1');
 
 /*
  * --------------------------------------------------------------------

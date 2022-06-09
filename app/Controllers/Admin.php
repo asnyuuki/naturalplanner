@@ -31,7 +31,7 @@ class Admin extends BaseController
 
         echo view('admin/index', $data);
     }
-
+    // Read untuk BDL
     public function detail($id = 0)
     {
         $data = [

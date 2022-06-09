@@ -35,7 +35,6 @@
                                 <a href="<?= base_url('admin/' . $users->userid); ?>" class="btn
                                 btn-info">detail</a>
                             </td>
-
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
